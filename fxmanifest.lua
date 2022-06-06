@@ -16,6 +16,5 @@ server_scripts {
 }
 
 dependency 'qbr-core' -- https://github.com/qbcore-redm-framework/qbr-core
-dependency 'rsg_notify' -- https://github.com/RexShack/rsg_notify
 
 lua54 'yes'

@@ -120,7 +120,7 @@ function Selltobutcher()
                             if deleted then
                                 TriggerServerEvent("rsg_butcher:reward", reward, item)
                             else
-								exports['rsg_notify']:DisplayNotification("something went wrong!", 5000)
+								exports['qbr-core']:Notify(9, 'something went wrong!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
                             end
 
                         end
@@ -136,7 +136,7 @@ function Selltobutcher()
                             if deleted then
                                 TriggerServerEvent("rsg_butcher:reward", reward, item)
                             else
-                                exports['rsg_notify']:DisplayNotification("something went wrong!", 5000)
+                                exports['qbr-core']:Notify(9, 'something went wrong!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
                             end
 
                         elseif quality == Config.Animal[i]["good"] then
@@ -149,7 +149,7 @@ function Selltobutcher()
                             if deleted then
                                 TriggerServerEvent("rsg_butcher:reward", reward, item)
                             else
-                                exports['rsg_notify']:DisplayNotification("something went wrong!", 5000)
+                                exports['qbr-core']:Notify(9, 'something went wrong!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
                             end
 
                         elseif quality == Config.Animal[i]["perfect"] then
@@ -161,14 +161,14 @@ function Selltobutcher()
                             if deleted then
                                 TriggerServerEvent("rsg_butcher:reward",reward, item)
                             else
-								exports['rsg_notify']:DisplayNotification("something went wrong!", 5000)
+								exports['qbr-core']:Notify(9, 'something went wrong!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
                             end
 
                         end
                     end
                 end
             else
-				exports['rsg_notify']:DisplayNotification("you are not holding anything!", 5000)
+				exports['qbr-core']:Notify(9, 'you are not holding anything!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
             end
         end
     end
